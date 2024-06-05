@@ -1,3 +1,5 @@
 git config user.name""
 git config user.email ""
 git config --global user.name "Pedro Augusto"
+
+git add . - adicionar todos os arquivos
