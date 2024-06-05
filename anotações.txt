@@ -4,3 +4,6 @@ git config --global user.name "Pedro Augusto"
 
 git add . - adicionar todos os arquivos
 git commit -m "Adicionar comentário"
+
+ git remote add origin https://github.com/PedroAugusto000/oficina1.git
+$ git push -u origin
