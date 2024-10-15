@@ -1,0 +1,26 @@
+-Criar uma máquina Windows
+-Configurar a rota pra máquina
+-Instalar Workbench
+
+-Logar na bastion no MobaXterm
+-Confere se a chave da máquina SQL tá lá:
+
+Comandos no connect - SSH 
+-Pega a chave da máquina do MySQL - Arrasta pro MOBA - Roda chmod 400 "par-chave.pem"
+-Pega o código ssh
+-Exit (Máquina bastion) e roda o comando do ssh pra entrar na máquina do bd
+
+-cd /etc/mysql
+-ls -> cd mysql.conf.d
+-ls -> sudo nano mysqld.cnf
+
+-Desce com a setinha do teclado até bind-adress -> Seta pros lado coloca 0.0.0.0 -> Faz no que está em baixo também
+-CTRL+O Enter pra salvar -> CTRL+X pra sair
+-restart service mysql restart
+
+-Iniciar a máquina do Windows
+
+-VPC -> Nat -> Desmarca a subnet private -> Loga no Windows
+-Pega o ip do servidor local de banco -> No mysql do Windows insere o servidor local no hostname -> A senha é a que foi configurada "user$$123A$" - porta 3306 - coloca um nome 
+
+
